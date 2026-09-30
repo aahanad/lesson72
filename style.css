@@ -1,0 +1,35 @@
+ :root[data-theme="fall"]{
+    --bg-color:#f9c68b;
+    --text-primary:#f98d20;
+    --text-secondary:#ff5b0f;
+    --accent:hsl(41, 100%, 59%);
+    --blob1:hsl(41, 100%, 59%);
+    --blob2:#ff5b0f;
+
+ }
+ :root[data-theme="winter"]{
+    --bg-color:#ffeec1fe;
+    --text-primary:#4d70fa;
+    --text-secondary:#36bfff;
+ }
+:root[data-theme="spring"]{
+    --bg-color:#c1fffcfe;
+    --text-primary:#73af70;
+    --text-secondary:#ff7ca5;
+}
+:root[data-theme="summer"]{
+    --bg-color:#ffc1cffe;
+    --text-primary:#ff6068;
+    --text-secondary:#ffcd7c;
+}
+
+
+
+ 
+ body{
+ background-color:var(--bg-color);
+ color:var(--text-primary);   
+    
+    font-family: "Modak", system-ui;
+  font-weight: 400;
+  font-style: normal;}
