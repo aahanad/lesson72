@@ -1,5 +1,5 @@
- :root[data-theme="fall"]{
-    --bg-color:#f9c68b;
+:root[data-theme="fall"]{
+    --bg-color:#e6f4ff;
     --text-primary:#f98d20;
     --text-secondary:#ff5b0f;
     --accent:hsl(41, 100%, 59%);
@@ -8,23 +8,67 @@
 
  }
  :root[data-theme="winter"]{
-    --bg-color:#ffeec1fe;
+    --bg-color:#fff9eafe;
     --text-primary:#4d70fa;
     --text-secondary:#36bfff;
+   --accent:#dfc1fffe;
+    --blob1:#6cecea;
+    --blob2:#9cc4f4;
  }
 :root[data-theme="spring"]{
     --bg-color:#c1fffcfe;
     --text-primary:#73af70;
     --text-secondary:#ff7ca5;
+   --accent:#ffaee5fe;
+    --blob1:#6cec9b;
+    --blob2:#dbf49c;
 }
 :root[data-theme="summer"]{
-    --bg-color:#ffc1cffe;
+    --bg-color:#f9e6b3fe;
     --text-primary:#ff6068;
     --text-secondary:#ffcd7c;
+   --accent:#ffc1cffe;
+    --blob1:#fd8443;
+    --blob2:#ff987c;
+}
+.background-blobs{
+   position:fixed;
+   top:0;
+   left:0;
+   width:100vw;
+   height:100vh;
+   z-index:-1;
+   overflow:hidden;
+
+}
+.blob{
+   position:absolute;
+   border-radius:50%;
+   filter:blur(80px);
+   opacity:04;
+   animation:float 20s infinite ease-in-out alternate;
+}
+.blob-1{
+   background:radial-gradient(circle,var(--blob1)0%,transparent 70%);
+   top:-10%;
+   left:-10%;
+   height:50vw;
+   width:50vw;
 }
 
-
-
+.blob-2{
+   background:radial-gradient(circle,var(--blob2)0%,transparent 70%);
+   bottom:-10%;
+   right:-10%;
+   height:50vw;
+   width:50vw;
+}
+@keyframes float{
+   0%{transform:translate(0,0)
+      scale(1)}
+   100%{transform:translate(10%,15%)
+      scale(1.1)}
+}
  
  body{
  background-color:var(--bg-color);
@@ -33,3 +77,7 @@
     font-family: "Modak", system-ui;
   font-weight: 400;
   font-style: normal;}
+
+
+
+ 
