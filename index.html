@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" data-theme="winter">
+<html lang="en" data-theme="fall">
     <head>
         <link rel="stylesheet" href="style.css">
         <title>The Bakeshop🧁</title>
@@ -8,7 +8,7 @@
 <link href="https://fonts.googleapis.com/css2?family=Modak&display=swap" rel="stylesheet">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="description" content="The Bakeshop is the perfect website for you to find your new favorite sweet treats!">
-
+<script src="script.js"></script>
     </head>
     <body>
         <div class="background-blobs">
@@ -29,9 +29,19 @@
             <button id="saved">Saved</button>
             <button id="baking-tips">Baking Tips</button>
             <button class="btn-primary"id="post-recipe">Post Recipe</button>
-            <button class="theme-btn" id="color-changer">🎨</button>
+       
+        <div class="theme_picker">
+            <button class="theme-btn" id="color-changer" aria-haspopup="true" aria-expanded="false">🎨</button>
+            <ul class="theme-menu"id ="theme-menu" hidden>
+            <li><button data-theme="fall">🎃Fall</button> </li>   
+            <li><button data-theme="winter">❄️Winter</button> </li>
+            <li><button data-theme="spring">🌼Spring</button> </li>
+            <li><button data-theme="summer">☀️Summer</button> </li>      
+
+            </ul>
+
+        </div>
         </div>
         </nav>
-
     </body>
 </html>
