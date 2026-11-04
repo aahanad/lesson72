@@ -143,3 +143,20 @@ font-family: modak;
    width: 100%; text-align: left; background: none; border: none; padding: 0.6rem 1.2rem; font-size: 0.95rem; font-weight: 500; color: #333; cursor: pointer; display: flex; align-items: center; transition: background-color 0.15s ease; } 
   .theme-menu li button:hover { 
    background-color: #f5f5f5; }
+
+#explore {
+   text-align:center;
+   
+}
+#search{
+   text-align:center;
+   font-size:4rem;
+}
+#search span{
+   color:var(--accent);
+   
+}
+#explore p{
+   font-size:2rem;
+   color:var(--text-secondary)
+}
