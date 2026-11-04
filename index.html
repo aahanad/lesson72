@@ -43,5 +43,45 @@
         </div>
         </div>
         </nav>
+        <div class="explore-page" id="explore">
+            <h1 id="search">Explore <span>Recipies</span></h1>
+            <p>find the perfect recipe for any occasion</p>
+            <div class="search-bar">
+                <input id="search-input" type="text" placeholder="Search for a recipe">
+                <button id="search-btn">🔍</button>
+                
+            
+            </div>
+            <div class="fiter-containers">
+                <label>Category:</label>
+                <select id="category-filter">
+                    <option value="">All Categories</option>
+                    <option value="cookies">Cookies</option>
+                    <option value="bread">Breads</option>
+                    <option value="cakes">Cakes</option>
+                    <option value="ice-cream">Ice Cream</option>
+                    <option value="pastries">Pastries</option>
+                    <option value="confections/candy">Confections/Candy</option>
+
+
+                </select>
+                
+                <label>Season:</label>
+                <select id="season-filter">
+                    <option value="fall">Fall</option>
+                    <option value="winter">Winter</option>
+                    <option value="spring">Spring</option>
+                    <option value="summer">Summer</option>
+                    
+
+                </select>
+                <div id="ingredientFilterContainer" class="hidden">
+                 <label>Must include:</label>  
+                 <input type="text" id="filterIngredient" placeholder="e.g.cinnamon">
+                </div>
+            </div>
+            <section class="recipe-grid" id="recipeGrid"></section>
+
+        </div>
     </body>
 </html>
