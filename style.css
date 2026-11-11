@@ -1,3 +1,4 @@
+
  :root[data-theme="fall"]{
     --bg-color:#e6f4ff;
     --text-primary:#f98d20;
@@ -177,14 +178,31 @@ font-family: modak;
    width:45px;
    height:45px;
    border-radius:50%;
-   cursor:poimter;
+   cursor:pointer;
    transition:transform 0.2s;}
 .search-bar{
    max-width:600px;
-   margin:0 auto 1.5 rem auto;
+   margin:0 auto 1.5rem auto;
    display:flex;
    border:5px solid var(--glass-border);
    border-radius:50px;
    padding:0.5rem;
    backdrop-filter:blur(12px);
+}
+.filter-containers{
+   display:inline-flex;
+   gap:1rem;
+   padding:1rem 1.5rem;
+   border-radius:50px;
+   align-items:center;
+   flex-wrap:wrap;
+   justify-content:center;
+}
+.filter-containers select, .filter-containers input{
+   background:rgba(0,0,0,0.1);
+   color:var(--text-primary);
+   border:1px solid var(--glass-border);
+   border-radius:8px;
+   padding:0.3rem 0.5rem;
+   font-family:inherit;
 }
