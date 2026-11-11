@@ -146,11 +146,12 @@ font-family: modak;
 
 #explore {
    text-align:center;
-   
+   align-items:center
 }
 #search{
    text-align:center;
    font-size:4rem;
+   margin-bottom: 50px;
 }
 #search span{
    color:var(--accent);
@@ -159,4 +160,31 @@ font-family: modak;
 #explore p{
    font-size:2rem;
    color:var(--text-secondary)
+}
+#search-input{
+   background:transparent;
+   color:var(--text-primary);
+   padding:5px;
+   flex:1;
+   border:none;
+   outline:none;
+   font-size:1rem;
+}
+#search-input::placeholder{color:var(--text-secondary)}
+#search-btn{background:var(--accent);
+   color:white;
+   border:none;
+   width:45px;
+   height:45px;
+   border-radius:50%;
+   cursor:poimter;
+   transition:transform 0.2s;}
+.search-bar{
+   max-width:600px;
+   margin:0 auto 1.5 rem auto;
+   display:flex;
+   border:5px solid var(--glass-border);
+   border-radius:50px;
+   padding:0.5rem;
+   backdrop-filter:blur(12px);
 }
