@@ -43,8 +43,8 @@
         </div>
         </div>
         </nav>
-        <div class="explore-page" id="explore">
-            <h1 id="search">Explore <span>Recipies</span></h1>
+        <div class="explore-page page-view active-view" id="explore">
+            <h1 class="search">Explore <span>Recipies</span></h1>
             <p>find the perfect recipe for any occasion</p>
             <div class="search-bar">
                 <input id="search-input" type="text" placeholder="Search for a recipe">
@@ -52,7 +52,7 @@
                 
             
             </div>
-            <div class="fiter-containers">
+            <div class="filter-containers">
                 <label>Category:</label>
                 <select id="category-filter">
                     <option value="">All Categories</option>
@@ -80,8 +80,31 @@
                  <input type="text" id="filterIngredient" placeholder="e.g.cinnamon">
                 </div>
             </div>
-            <section class="recipe-grid" id="recipeGrid"></section>
+            <section class="recipe-grid" id="recipeGrid">
+                <!--recipes intjected here-->
+            </section>
 
         </div>
+        
+        <!--saved recipies view-->
+        <div id="viewSaved" class="page-view">
+            <h1 class="search">My<span>Saved</span>Recipes</h1>
+            <p>Your personal collection organized by category</p>
+            <section id="savedCategoriesContainer">
+            </section>
+        </div>
+        <!--Baking tips view-->
+        <div id="viewTips" class="page-view">
+            <div class="glass-panel" style="max-width: 800px; margin: 0 auto; padding: 3rem; border-radius: 24px;">
+                <h2>Essential Baking Tips</h2>
+                <ul style="line-height: 2;margin-top:1rem;">
+                    <li>baking tip 1</li>
+
+                </ul>
+            </div>
+
+        </div>
+        
+    
     </body>
 </html>
