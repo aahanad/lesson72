@@ -1,4 +1,3 @@
-
  :root[data-theme="fall"]{
     --bg-color:#e6f4ff;
     --text-primary:#f98d20;
@@ -145,16 +144,18 @@ font-family: modak;
   .theme-menu li button:hover { 
    background-color: #f5f5f5; }
 
-#explore {
+.page-view {
    text-align:center;
    align-items:center
 }
-#search{
+.search{
    text-align:center;
    font-size:4rem;
    margin-bottom: 50px;
+   -webkit-text-stroke:0.25px black;
+   
 }
-#search span{
+.search span{
    color:var(--accent);
    
 }
@@ -205,4 +206,7 @@ font-family: modak;
    border-radius:8px;
    padding:0.3rem 0.5rem;
    font-family:inherit;
+}
+.hidden{
+display:none !important;
 }
